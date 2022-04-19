@@ -1,0 +1,77 @@
+// variables
+
+//colores
+$mainColor:rgba(30,250,255,.5);
+$secondaryColor:rgba(130,188,250,.3);
+$keyColor: rgba(66,200,255,.7);
+
+
+
+ .btn-all {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #495057;
+ z-index: 1;
+}
+.btn-all:hover:after {
+  width: 100%;
+  left: 0;
+}
+.btn-all:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  background-color: #6c757d;
+  right: 0;
+}
+.btn-all:active {
+  top: 2px;
+
+		
+}
+
+.btn-footer{
+	@extend .btn-all;
+
+}
+
+$paleta: (
+	'uno':#5fdff4, 
+    'dos':#37b5c9,
+    'tres':#1e4b52,
+    'cuatro':#78daea,
+    'cinco':#56c7c2,
+    'seis':#5cb0ad,
+    'siete':#4c3631,
+    'ocho':#423836,
+    'nueve':#1e1614,
+    'diez':#a1849a,);
+
+@mixin text($font-size,$color,$text-transform,){
+	font-size:$font-size;
+	color:$color;
+	text-transform:$text-transform;
+}
+
+
+
+
+
+

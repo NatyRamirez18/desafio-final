@@ -4,7 +4,8 @@
   padding: 0; }
   * body {
     background-image: url(../img/greentextura-bg.jpg);
-    background-attachment: fixed; }
+    background-attachment: fixed;
+    overflow-x: hidden; }
 
 .btn-all, .btn-footer {
   min-width: 130px;
